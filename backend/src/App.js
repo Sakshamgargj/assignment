@@ -6,7 +6,7 @@ import articleRoutes from "./routes/article-routes.js";
 const app = express()
 
 const allowedOrigins = [
-  "http://localhost:5173"
+  "https://blog-management-l4e7.vercel.app"
 ];
 
 app.use(
