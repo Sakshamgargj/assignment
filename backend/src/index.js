@@ -7,7 +7,7 @@ console.log("PORT: ",process.env.PORT)
 
 connectDB()
     .then(() => {
-        app.listen(process.env.PORT || 3000, '0.0.0.0', () => {
+        app.listen(process.env.PORT || 8000, '0.0.0.0', () => {
             console.log(`⚙️ Server is running at port : ${process.env.PORT}`);
         });
     })
