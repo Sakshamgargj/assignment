@@ -25,7 +25,7 @@ export const createArticle = async (req, res) => {
 export const getAllArticles = async (req, res) => {
   try {
     const articles = await blogModel.find().sort({ createdAt: -1 });
-    res.json(articles);
+    res.status(200).json(articles);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
